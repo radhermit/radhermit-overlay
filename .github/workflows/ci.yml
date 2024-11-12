@@ -1,6 +1,8 @@
 name: pkgcruft
 
-on: push
+on:
+  push:
+  workflow_dispatch:
 
 jobs:
   build:
@@ -9,5 +11,5 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: Run pkgcruft
+    - name: Run pkgcruft action
       uses: pkgcraft/pkgcruft-action@main
