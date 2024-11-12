@@ -1,15 +1,14 @@
 name: pkgcruft
 
-on:
-  push:
-  workflow_dispatch:
+on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-
     - name: Run pkgcruft action
       uses: pkgcraft/pkgcruft-action@main
