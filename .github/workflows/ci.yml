@@ -14,3 +14,5 @@ jobs:
         fetch-depth: 0
     - name: Run pkgcruft action
       uses: pkgcraft/pkgcruft-action@main
+      with:
+        pr-comments: false
