@@ -7,6 +7,7 @@ inherit meson optfeature
 
 DESCRIPTION="i3-compatible Wayland window manager"
 HOMEPAGE="https://swaywm.org"
+die test
 
 if [[ ${PV} == 9999 ]]; then
 	inherit git-r3

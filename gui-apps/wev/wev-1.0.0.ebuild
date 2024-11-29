@@ -6,10 +6,9 @@ EAPI=8
 DESCRIPTION="tool for debugging events on a Wayland window, analagous to the X11 tool xev"
 HOMEPAGE="https://git.sr.ht/~sircmpwn/wev"
 SRC_URI="https://git.sr.ht/~sircmpwn/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
-KEYWORDS="~amd64 ~x86"
-
 LICENSE="MIT"
 SLOT="0"
+KEYWORDS="~amd64 ~x86"
 IUSE="+man"
 
 RDEPEND="
